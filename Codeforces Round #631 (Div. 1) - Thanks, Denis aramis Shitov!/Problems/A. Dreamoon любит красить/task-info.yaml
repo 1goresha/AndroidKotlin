@@ -1,0 +1,35 @@
+type: codeforces
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    /**
+     * Accomplished using the EduTools plugin by JetBrains https://plugins.jetbrains.com/plugin/10081-edutools
+     */
+
+    fun main() {
+        // Write your solution here
+    }
+  learner_created: false
+- name: testData/1/input.txt
+  visible: true
+  text: |-
+    5 3
+    3 2 2
+  learner_created: false
+- name: testData/1/output.txt
+  visible: true
+  text: 2 4 1
+  learner_created: false
+- name: testData/2/input.txt
+  visible: true
+  text: |-
+    10 1
+    1
+  learner_created: false
+- name: testData/2/output.txt
+  visible: true
+  text: -1
+  learner_created: false
+feedback_link: https://codeforces.com/contest/1329/problem/A?locale=ru
+status: Unchecked

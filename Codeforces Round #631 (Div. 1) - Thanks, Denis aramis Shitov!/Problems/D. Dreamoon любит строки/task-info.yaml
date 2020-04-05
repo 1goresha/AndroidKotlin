@@ -1,0 +1,42 @@
+type: codeforces
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    /**
+     * Accomplished using the EduTools plugin by JetBrains https://plugins.jetbrains.com/plugin/10081-edutools
+     */
+
+    fun main() {
+        // Write your solution here
+    }
+  learner_created: false
+- name: testData/1/input.txt
+  visible: true
+  text: |-
+    4
+    aabbcc
+    aaabbb
+    aaa
+    abacad
+  learner_created: false
+- name: testData/1/output.txt
+  visible: true
+  text: |-
+    3
+    3 3
+    2 4
+    1 2
+    3
+    3 4
+    2 3
+    1 2
+    3
+    1 1
+    1 1
+    1 1
+    1
+    1 6
+  learner_created: false
+feedback_link: https://codeforces.com/contest/1329/problem/D?locale=ru
+status: Unchecked

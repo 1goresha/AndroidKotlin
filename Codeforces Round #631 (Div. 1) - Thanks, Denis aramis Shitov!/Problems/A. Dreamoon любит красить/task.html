@@ -1,0 +1,91 @@
+<div class="problem-statement">
+ <div class="header">
+  <div class="title">
+   A. Dreamoon любит красить
+  </div>
+  <div class="time-limit">
+   <div class="property-title">
+    ограничение по времени на тест
+   </div>2 секунды
+  </div>
+  <div class="memory-limit">
+   <div class="property-title">
+    ограничение по памяти на тест
+   </div>256 мегабайт
+  </div>
+  <div class="input-file">
+   <div class="property-title">
+    ввод
+   </div>стандартный ввод
+  </div>
+  <div class="output-file">
+   <div class="property-title">
+    вывод
+   </div>стандартный вывод
+  </div>
+ </div>
+ <div>
+  <p>Dreamoon очень любит красить клетки.</p>
+  <p>Есть ряд из $n$ клеток. Исходно, все клетки пустые (не содержат никакой цвет). Клетки пронумерованы от $1$ до $n$.</p>
+  <p>Вам дано целое число $m$ и $m$ целых чисел $l_1, l_2, \ldots, l_m$ ($1 \le l_i \le n$)</p>
+  <p>Dreamoon совершит $m$ операций.</p>
+  <p>В $i$-й операции, Dreamoon выберет число $p_i$ из отрезка $[1, n-l_i+1]$ (включительно) и покрасит все клетки от $p_i$ до $p_i+l_i-1$ (включительно) в $i$-й цвет. Обратите внимание, что клетки могут быть покрашены несколько раз, в таком случае, клетка будет покрашена в цвет из самой последней операции.</p>
+  <p>Dreamoon надеется, что после $m$ операций, все цвета будут встречаться хотя бы один раз и все клетки будут покрашены. Пожалуйста, помогите Dreamoon выбрать $p_i$ в каждой операции, чтобы удовлетворить всем ограничениям.</p>
+ </div>
+ <div class="input-specification">
+  <div class="section-title">
+   Входные данные
+  </div>
+  <p>В первой строке записаны два целых числа $n,m$ ($1 \leq m \leq n \leq 100\,000$).</p>
+  <p>Во второй строке записано $m$ целых чисел $l_1, l_2, \ldots, l_m$ ($1 \leq l_i \leq n$).</p>
+ </div>
+ <div class="output-specification">
+  <div class="section-title">
+   Выходные данные
+  </div>
+  <p>Если невозможно совершить $m$ операций, чтобы удовлетворить всем ограничениям, выведите «<span class="tex-font-style-tt">-1</span>» (без кавычек).</p>
+  <p>Иначе, выведите $m$ целых чисел $p_1, p_2, \ldots, p_m$ ($1 \leq p_i \leq n - l_i + 1$), после этих $m$ операций, все цвета должны встречаться хотя бы один раз и все клетки должны быть покрашены. </p>
+  <p>Если есть несколько возможных решений, вы можете вывести любое.</p>
+ </div>
+ <div class="sample-tests">
+  <div class="section-title">
+   Примеры
+  </div>
+  <div class="sample-test">
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>
+5 3
+3 2 2
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>
+2 4 1
+</pre>
+   </div>
+   <div class="input">
+    <div class="title">
+     Входные данные
+    </div>
+    <pre>
+10 1
+1
+</pre>
+   </div>
+   <div class="output">
+    <div class="title">
+     Выходные данные
+    </div>
+    <pre>
+-1
+</pre>
+   </div>
+  </div>
+ </div>
+</div>
