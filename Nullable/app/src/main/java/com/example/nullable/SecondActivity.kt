@@ -24,6 +24,10 @@ class SecondActivity : AppCompatActivity() {
             count++
             textView2.text = count.toString()
         }
+
+        button3.setOnClickListener {
+            textView3.text = editText2.text.toString()
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -37,4 +41,6 @@ class SecondActivity : AppCompatActivity() {
         count = savedInstanceState.getInt("count")
         someText = savedInstanceState.getString("string")
     }
+
+
 }
