@@ -2,23 +2,20 @@ package com.example.nullable
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
 
     var count = 0
-    var someText: String? = null
+    var string : String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        if (count != 0) {
-            textView2.text = intent.getStringExtra("someText")
-        }else{
-            textView2.text = count.toString()
-        }
-//        textView2.text = someText
+
+//            textView2.text = intent.getStringExtra("someText")
 
         button2.setOnClickListener {
             count++
@@ -26,20 +23,23 @@ class SecondActivity : AppCompatActivity() {
         }
 
         button3.setOnClickListener {
-            textView3.text = editText2.text.toString()
+            string = editText2.text.toString()
+            textView3.text  = string
         }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putInt("count", count)
-        outState.putString("string", someText)
+            outState.putInt("count", count)
+            outState.putString("string", string)
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         count = savedInstanceState.getInt("count")
-        someText = savedInstanceState.getString("string")
+        textView2.text = savedInstanceState.getInt("count").toString()
+        string = savedInstanceState.getString("string")
+        textView3.text = savedInstanceState.getString("string")
     }
 
 
