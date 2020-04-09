@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nullable</string>
+    <string name="textValue">hi</string>
+    <string name="text2">text</string>
+</resources>
