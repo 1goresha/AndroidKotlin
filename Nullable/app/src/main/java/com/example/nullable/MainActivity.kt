@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             textView.text = editText.text
-            intentForSecondActivity.putExtra("TEXT", textView.text)
+            intentForSecondActivity.putExtra("someText", textView.text.toString())
             startActivity(intentForSecondActivity)
         }
     }
