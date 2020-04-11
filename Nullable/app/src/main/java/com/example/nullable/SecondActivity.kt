@@ -2,6 +2,7 @@ package com.example.nullable
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_second.*
 
@@ -26,6 +27,12 @@ class SecondActivity : AppCompatActivity() {
             string = editText2.text.toString()
             textView3.text  = string
         }
+
+        button3.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v : View){
+                println("hello")
+            }
+        })
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
