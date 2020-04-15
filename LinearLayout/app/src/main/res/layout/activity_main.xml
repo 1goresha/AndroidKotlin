@@ -10,70 +10,52 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@drawable/guitar" />
 
         <TextView
-            android:id="@+id/firstTextView"
+            android:id="@+id/firstGuitar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="firstTextView"
+            android:text="my first guitar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/secondTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="secondTextView!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <TextView
-            android:id="@+id/thirdTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="thirdTextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/guitar"/>
 
         <TextView
-            android:id="@+id/fourthTextView"
+            android:id="@+id/secondGuitar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="fourthTextView"
+            android:text="my second guitar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/fifthTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fifthTextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <TextView
-            android:id="@+id/sixthTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="sixthTextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"/>
 
     </LinearLayout>
 
