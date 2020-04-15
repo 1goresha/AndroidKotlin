@@ -28,7 +28,15 @@ class SecondActivity : AppCompatActivity() {
             textView3.text = string
         }
 
+<<<<<<< HEAD
         button3.setOnClickListener(object : View.OnClickListener)
+=======
+        button3.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v : View){
+                println("hello")
+            }
+        })
+>>>>>>> 297618a917946055f1f2bbc373b9973e0467f1a2
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
