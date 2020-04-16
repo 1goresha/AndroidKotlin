@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
 
     <EditText
         android:id="@+id/editText2"
@@ -94,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/orderPriceText"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="0"
             android:textColor="@android:color/black"
             android:textSize="18dp"
@@ -106,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/orderPriceText"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/сurrencyText"
             android:text="$"
             android:textColor="@android:color/black"
@@ -119,11 +120,23 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="55dp"
             android:text="Quantity"
             android:textColor="@android:color/black"
             android:textSize="18dp"
             android:textStyle="bold" />
+
+        <Button
+            android:layout_alignStart="@id/quantityCountText"
+            android:layout_below="@id/quantityText"
+            android:layout_toEndOf="@id/quantityCountText"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"/>
 
         <TextView
             android:id="@+id/quantityCountText"
@@ -131,14 +144,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
             android:text="0"
             android:textColor="@android:color/black"
             android:textSize="18dp"
             android:textStyle="bold" />
 
+        <Button
+            android:layout_below="@id/quantityText"
+            android:layout_alignEnd="@id/quantityCountText"
+            android:layout_toStartOf="@id/quantityCountText"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"/>
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to cart"
+        />
 
 </LinearLayout>
