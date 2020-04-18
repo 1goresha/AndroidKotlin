@@ -57,8 +57,8 @@
         android:textStyle="bold" />
 
     <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="wrap_content"
+        android:id="@+id/spinnerOfGoods"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginEnd="20dp" />
@@ -78,7 +78,7 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/orderPriceText"
+            android:id="@+id/orderPriceTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -93,7 +93,7 @@
             android:id="@+id/сurrencyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/orderPriceText"
+            android:layout_below="@id/orderPriceTextView"
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:text="0"
@@ -105,7 +105,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/orderPriceText"
+            android:layout_below="@id/orderPriceTextView"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/сurrencyText"
@@ -128,6 +128,7 @@
 
         <Button
             android:layout_alignStart="@id/quantityCountText"
+            android:onClick="increaseQuantityText"
             android:layout_below="@id/quantityText"
             android:layout_toEndOf="@id/quantityCountText"
             android:layout_marginStart="25dp"
@@ -153,6 +154,7 @@
 
         <Button
             android:layout_below="@id/quantityText"
+            android:onClick = "decreaseQuantityText"
             android:layout_alignEnd="@id/quantityCountText"
             android:layout_toStartOf="@id/quantityCountText"
             android:layout_marginEnd="25dp"
