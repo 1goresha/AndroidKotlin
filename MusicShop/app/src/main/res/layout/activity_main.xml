@@ -169,7 +169,7 @@
 
     <Button
         android:id="@+id/button"
-        android:onClick="intentOrder"
+        android:onClick="addToCart"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
