@@ -9,7 +9,7 @@
     android:layout_margin="10dp">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/customerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -64,7 +64,7 @@
         android:layout_marginEnd="20dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/goodsImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
@@ -169,6 +169,7 @@
 
     <Button
         android:id="@+id/button"
+        android:onClick="intentOrder"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
