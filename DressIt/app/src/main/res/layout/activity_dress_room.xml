@@ -23,8 +23,40 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/womenBodyTemplate"
-            />
+            android:src="@drawable/women_body_template"
+            android:padding="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previousHat"
+                android:onClick="doPreviousHat"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="back"
+                android:textSize="30dp"
+                android:background="@android:color/white"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:id="@+id/hat"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/nextHat"
+                android:onClick="doNextHat"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="next"
+                android:textSize="30dp"
+                android:background="@android:color/white"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
 
 
 
