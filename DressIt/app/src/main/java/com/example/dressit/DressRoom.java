@@ -37,6 +37,8 @@ public class DressRoom extends AppCompatActivity {
     public void doNextHat(View view) {
         if (currentCountOfHat > hats.size() - 1) {
             currentCountOfHat = 0;
+        }else if (currentCountOfHat < 0) {
+            currentCountOfHat = hats.size() - 1;
         }
         ImageView hat = findViewById(R.id.hat);
         hat.setImageResource(hats.get(currentCountOfHat));
@@ -46,6 +48,8 @@ public class DressRoom extends AppCompatActivity {
     public void doPreviousHat(View view) {
         if (currentCountOfHat < 0) {
             currentCountOfHat = hats.size() - 1;
+        }else if (currentCountOfHat > hats.size() - 1) {
+            currentCountOfHat = 0;
         }
         ImageView hat = findViewById(R.id.hat);
         hat.setImageResource(hats.get(currentCountOfHat));
