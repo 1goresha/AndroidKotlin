@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/colorForBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="10"
+        android:weightSum="100">
+        <Button
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+        android:textColor="@color/colorForTextOnButton"
+        android:text="одна херня"
+        android:background="@color/colorForButton"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:textColor="@color/colorForTextOnButton"
+            android:text="другая херня"
+            android:background="@color/colorForButton"/>
+
+        <Spinner
+            android:id="@+id/spinnerMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="80"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:src="@drawable/women_clothe" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:src="@drawable/men_clothe" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="10"
+        android:background="@color/colorForButton">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorForTextOnButton"
+            android:text="C L O T H I N G  S T O R E"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

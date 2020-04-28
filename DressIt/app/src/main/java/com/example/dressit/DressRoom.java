@@ -27,6 +27,13 @@ public class DressRoom extends AppCompatActivity {
         hats.add(R.drawable.hat1);
         hats.add(R.drawable.hat2);
         hats.add(R.drawable.hat3);
+        hats.add(R.drawable.hat4);
+        hats.add(R.drawable.hat5);
+        hats.add(R.drawable.hat6);
+        hats.add(R.drawable.hat7);
+        hats.add(R.drawable.hat8);
+        hats.add(R.drawable.hat9);
+        hats.add(R.drawable.hat10);
         textView = findViewById(R.id.userNameTextView);
         Intent intent = getIntent();
         String userName = intent.getStringExtra("userName");
