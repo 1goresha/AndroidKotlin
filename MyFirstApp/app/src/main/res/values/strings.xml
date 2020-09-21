@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">My First App</string>
-    <string name="hello_world_text">0</string>
-    <string name="textWithRandomDigitInSecondActivity">Рандомное число от 0 до %1d</string>
-</resources>
